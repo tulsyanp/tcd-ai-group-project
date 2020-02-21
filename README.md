@@ -1,2 +1,4 @@
-# tcd-ai-group-project
-The following repository contains the group project for TCD
+# Facial Recognition
+Analysis of state-of-the-art algorithms.
+
+To be updated gradually.
