@@ -36,10 +36,10 @@ Eigenfaces | Prediction | Classification Report
 ![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/ICA/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/ICA/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/ICA/figure_readme/ica_result.png)
 
 
-### ICA (Independent Component Analysis)
+### NMF (Non-negative Matrix Factorization)
 Eigenfaces | Prediction | Classification Report
 --- | --- | ---
-![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/ICA/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/ICA/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/ICA/figure_readme/ica_result.png)
+![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/NMF/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/NMF/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/NMF/figure_readme/nmf_result.png)
 
 
 # Group Members
