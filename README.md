@@ -33,7 +33,7 @@ Eigenfaces | Prediction | Classification Report
 ### ICA (Independent Component Analysis)
 Eigenfaces | Prediction | Classification Report
 --- | --- | ---
-![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/pca_result.png)
+![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/ICA/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/ICA/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/ICA/figure_readme/ica_result.png)
 
 
 # Group Members
