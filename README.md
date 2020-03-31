@@ -30,6 +30,12 @@ Eigenfaces | Prediction | Classification Report
 ![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/pca_result.png)
 
 
+### ICA (Independent Component Analysis)
+Eigenfaces | Prediction | Classification Report
+--- | --- | ---
+![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/pca_result.png)
+
+
 # Group Members
 1. Prateek Tulsyan - 19303677
 2. Mrinal Jhamb - 19301913
