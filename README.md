@@ -25,7 +25,12 @@ Face Recognition with SVM classifier using PCA, ICA, NMF reduced face vectors
 - Labelled faces in the wild [http://vis-www.cs.umass.edu/lfw/]
 
 ### PCA (Principal Component Analysis)
-![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/Faces.png)
+Eigenfaces | Prediction
+--- | ---
+![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/prediction.png)
+
+Classification Report
+![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/pca_result.png)
 
 # Group Members
 1. Prateek Tulsyan - 19303677
