@@ -23,6 +23,7 @@ Face Recognition with SVM classifier using PCA, ICA, NMF reduced face vectors
 # Experimental Result
 ### Dataset used
 - Labelled faces in the wild [http://vis-www.cs.umass.edu/lfw/]
+- Faces which has has more than 100 samples were used.
 
 ### PCA (Principal Component Analysis)
 Eigenfaces | Prediction | Classification Report
