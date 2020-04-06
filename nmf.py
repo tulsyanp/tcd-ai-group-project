@@ -1,7 +1,4 @@
-import matplotlib.pyplot as plt
-
 from main import fetch_dataset, fetch_data_details, split_data, dimensionality_reduction_NMF, train_text_transform_Model, classification_svc, prediction, print_report, plot_images, title
-
 
 # Load data
 dataset = fetch_dataset()
