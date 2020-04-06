@@ -2,6 +2,7 @@ from time import time
 from sklearn.datasets import fetch_lfw_people
 from sklearn.model_selection import train_test_split
 from sklearn.decomposition import PCA, FastICA, NMF
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis as LDA
 from sklearn.model_selection import GridSearchCV
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report
@@ -73,6 +74,17 @@ def dimensionality_reduction_NMF(n_components, X_train, height, width):
     return nmf, eigenfaces
 
 
+def dimensionality_reduction_LDA(n_components, X_train, y_train):
+    print("Extracting the top %d fisherfaces from %d faces"% (n_components, X_train.shape[0]))
+    t0 = time()
+    pca = PCA(n_components=n_components).fit(X_train)
+
+    lda = LDA().fit(pca.transform(X_train), y_train)
+    print("done in %0.3fs" % (time() - t0))
+
+    return lda, pca
+
+
 def train_text_transform_Model(model, X_train, X_test):
     print("Projecting the input data on the eigenfaces orthonormal basis")
     t0 = time()
@@ -81,6 +93,16 @@ def train_text_transform_Model(model, X_train, X_test):
     print("done in %0.3fs" % (time() - t0))
 
     return X_train_model, X_test_model
+
+
+def train_text_transform_LDA(lda, pca, X_train, X_test):
+    print("Projecting the input data on the eigenfaces orthonormal basis")
+    t0 = time()
+    X_train_lda = lda.transform(pca.transform(X_train))
+    X_test_lda = lda.transform(pca.transform(X_test))
+    print("done in %0.3fs" % (time() - t0))
+
+    return X_train_lda, X_test_lda
 
 
 def classification_svc(X_train_model, y_train):
@@ -116,6 +138,19 @@ def plot_images(images, titles, height, width, n_row=1, n_col=4):
     for i in range(n_row * n_col):
         plt.subplot(n_row, n_col, i + 1)
         plt.imshow(images[i].reshape((height, width)), cmap=plt.cm.gray)
+        plt.title(titles[i], size=12)
+        plt.xticks(())
+        plt.yticks(())
+
+    plt.show()
+
+
+def plot_images_lda(pca, lda, titles, height, width, n_row=1, n_col=4):
+    plt.figure(figsize=(1.8 * n_col, 2.4 * n_row))
+    plt.subplots_adjust(bottom=0, left=.01, right=.99, top=.90, hspace=.35)
+    for i in range(n_row * n_col):
+        plt.subplot(n_row, n_col, i + 1)
+        plt.imshow(pca.inverse_transform(lda.scalings_[:, i]).reshape((height, width)), cmap=plt.cm.gray)
         plt.title(titles[i], size=12)
         plt.xticks(())
         plt.yticks(())
