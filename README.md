@@ -1,9 +1,9 @@
 # Face Recognition
-Face Recognition with SVM classifier using PCA, ICA, NMF reduced face vectors
+Face Recognition with SVM classifier using PCA, ICA, NMF, LDA reduced face vectors
 
 ## Repository Structure
-- The folders ```PCA, ICA, NMF and DATASET``` consists of all the images and classification report for ech algorithm respectively.
-- The files ```pca.py | ica.py | nmf.py``` consists of algorithm implementation for each algorithm respectively.
+- The folders ```PCA, ICA, NMF, LDA and DATASET``` consists of all the images and classification report for ech algorithm respectively.
+- The files ```pca.py | ica.py | nmf.py | lda.py``` consists of algorithm implementation for each algorithm respectively.
 - The document ```Report.docx``` present in the root of the source code contains all the textual document of the project.
 - The document ```todo-mom.docx``` present in the root of the source code contains all the todos of each individual and minutes of meeting of the group.
 - The ```requirements.txt``` file contains the project dependencies.
@@ -18,6 +18,7 @@ Face Recognition with SVM classifier using PCA, ICA, NMF reduced face vectors
 - For PCA, run the command ```python pca.py```
 - For ICA, run the command ```python ica.py```
 - For NMF, run the command ```python nmf.py```
+- For LDA, run the command ```python lda.py```
 
 
 # Experimental Result
@@ -29,6 +30,12 @@ Face Recognition with SVM classifier using PCA, ICA, NMF reduced face vectors
 Eigenfaces | Prediction | Classification Report
 --- | --- | ---
 ![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/PCA/figure_readme/pca_result.png)
+
+
+### LDA (Linear Discriminant Analysis)
+FisherFaces | Prediction | Classification Report
+--- | --- | ---
+![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/LDA/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/LDA/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/LDA/figure_readme/lda_result.png)
 
 
 ### ICA (Independent Component Analysis)
