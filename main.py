@@ -1,7 +1,7 @@
 from time import time
 from sklearn.datasets import fetch_lfw_people
 from sklearn.model_selection import train_test_split
-from sklearn.decomposition import PCA, FastICA
+from sklearn.decomposition import PCA, FastICA, NMF
 from sklearn.model_selection import GridSearchCV
 from sklearn.svm import SVC
 from sklearn.metrics import classification_report
@@ -60,6 +60,17 @@ def dimensionality_reduction_ICA(n_components, X_train, height, width):
     eigenfaces = ica.components_.reshape((n_components, height, width))
 
     return ica, eigenfaces
+
+
+def dimensionality_reduction_NMF(n_components, X_train, height, width):
+    print("Extracting the top %d eigenfaces from %d faces"% (n_components, X_train.shape[0]))
+    t0 = time()
+    nmf = NMF(n_components=n_components, init='nndsvda', tol=5e-3).fit(X_train)
+    print("done in %0.3fs" % (time() - t0))
+
+    eigenfaces = nmf.components_.reshape((n_components, height, width))
+
+    return nmf, eigenfaces
 
 
 def train_text_transform_Model(model, X_train, X_test):

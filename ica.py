@@ -10,7 +10,7 @@ n_samples, height, width, X, n_features, y, target_names, n_classes = fetch_data
 # split into a training and testing set
 X_train, X_test, y_train, y_test = split_data(X, y)
 
-# compute PCA
+# compute ICA
 n_components = 150
 
 ica, eigenfaces = dimensionality_reduction_ICA(n_components, X_train, height, width)
