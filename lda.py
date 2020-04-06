@@ -58,7 +58,11 @@ print("done in %0.3fs" % (time() - t0))
 
 
 
-# eigenfaces = lda.scalings_.reshape((n_components, h, w))
+# eigenfaces = pca.inverse_transform(lda.scalings_[:,0])
+
+# eigenfaces = lda.scalings_
+
+# print(eigenfaces.shape)
 
 # print((pca.inverse_transform(lda.scalings_[:,0])).reshape((h, w)))
 
@@ -140,13 +144,14 @@ def plot_gallery(images, titles, h, w, n_row=3, n_col=4):
         plt.yticks(())
 
 
-def plot_gallery_fisher(titles, h, w, n_row=3, n_col=4):
+def plot_gallery_fisher(titles, h, w, n_row=1, n_col=4):
     """Helper function to plot a gallery of portraits"""
     plt.figure(figsize=(1.8 * n_col, 2.4 * n_row))
     plt.subplots_adjust(bottom=0, left=.01, right=.99, top=.90, hspace=.35)
     for i in range(n_row * n_col):
         plt.subplot(n_row, n_col, i + 1)
-        plt.imshow((pca.inverse_transform(lda.scalings_[:,i])).shape((100, 100)), cmap=plt.cm.gray)
+        # Map from PCA space back to the original space (of images)
+        plt.imshow(pca.inverse_transform(lda.scalings_[:, i]).reshape((h, w)), cmap=plt.cm.gray)
         plt.title(titles[i], size=12)
         plt.xticks(())
         plt.yticks(())
@@ -165,7 +170,7 @@ prediction_titles = [title(y_pred, y_test, target_names, i)
 plot_gallery(X_test, prediction_titles, h, w)
 
 # plot the gallery of the most significative eigenfaces
-eigenface_titles = ["eigenface %d" % i for i in range(n_components)]
+eigenface_titles = ["fisherface %d" % i for i in range(4)]
 plot_gallery_fisher(eigenface_titles, h, w)
 
 plt.show()
