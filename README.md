@@ -35,7 +35,7 @@ Eigenfaces | Prediction | Classification Report
 ### LDA (Linear Discriminant Analysis)
 FisherFaces | Prediction | Classification Report
 --- | --- | ---
-![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/LDA/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/LDA/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/LDA/figure_readme/lda_result.png)
+![Fisherface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/LDA/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/LDA/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/LDA/figure_readme/lda_result.png)
 
 
 ### ICA (Independent Component Analysis)
@@ -49,6 +49,9 @@ Eigenfaces | Prediction | Classification Report
 --- | --- | ---
 ![Eigenface generated](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/NMF/figure_readme/faces.png) | ![Prediction](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/NMF/figure_readme/prediction.png) | ![Classification report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/NMF/figure_readme/nmf_result.png)
 
+
+### Comparison of above algorithms (Accuracy and Training time)
+![Comparion_report](https://raw.githubusercontent.com/tulsyanp/tcd-ai-group-project/master/graphs/Dashboard.png)
 
 # Group Members
 1. Prateek Tulsyan - 19303677
