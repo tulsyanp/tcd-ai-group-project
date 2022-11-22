@@ -16,7 +16,7 @@ numpy==1.18.1
 opencv-python==4.2.0.32
 opencv-utils==0.0.2
 pandas==1.0.1
-Pillow==7.0.0
+Pillow==9.3.0
 pyparsing==2.4.6
 pyquery==1.4.1
 pyrsistent==0.15.7
